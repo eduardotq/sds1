@@ -5,12 +5,13 @@ import { RecordItem } from '../Records/types';
 export const buildBarSeries = (games: Game[], records: RecordItem[]) => {
   const mappedGames = games.map(game => {
     
-    const filteredGames = records.filter(item => {         
-      return item.gameTitle === game.title && item.gamePlatform === game.platform
+    const filteredGames = records.filter(item => {          
+              
+      return item.gameTitle === game.title && item.gamePlatform === game.plaftorm
     });    
     
     return {
-      x: `${game.title} | ${game.platform}`,
+      x: `${game.title} | ${game.plaftorm}`,
       y: filteredGames.length
     }
     

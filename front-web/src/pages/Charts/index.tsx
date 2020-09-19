@@ -34,7 +34,10 @@ const Charts = () => {
             const gamesResponse = await Axios.get( `${BASE_URL}/games` );
 
             const barData = buildBarSeries( gamesResponse.data, recordsResponse.data.content );
-            setBarChartData( barData );            
+            console.log(gamesResponse.data)
+            setBarChartData( barData );   
+            
+            console.log(gamesResponse.data)
 
             const platformChartData = getPlatformChartData( recordsResponse.data.content );
             setPlatformData( platformChartData );
