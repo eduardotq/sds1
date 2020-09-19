@@ -43,8 +43,8 @@ public Platform getPlaftorm() {
 	return platform;
 }
 
-public void setPlaftorm(Platform plaftorm) {
-	this.platform = plaftorm;
+public void setPlaftorm(Platform platform) {
+	this.platform = platform;
 };
 
 
